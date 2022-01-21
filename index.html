@@ -8,10 +8,11 @@
     <header class="page-header">
       <a class="header-logo" href="index.html">device</a>
       <nav class="user-navigation">
-        <div class="search-navgation">
+        <form class="seacrh-navigation" action="https://echo.htmlacademy.ru/" method="get">
+          <img class="search-pic" src="" alt="lens-pic">
           <input class="search-input" type="search" name="search" placeholder="Текст поиска">
           <button class="search-button" type="submit">Найти</button>
-        </div>
+        </form>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="">Войти</a>
@@ -228,12 +229,14 @@
           <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис.
             Заодно сможете проверить работоспособность покупки.
           </p>
-          <b class="contacts-device">Интернет-магазин "Девайс"</b>
+          <h3 class="contacts-device">Интернет-магазин "Девайс"</h3>
           <p class="contacts-adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <b class="contacts-working-hours"></b>
-          <p class="contacts-work-weekley">пн—пт: с 10:00 до 22:00</p>
-          <p class="contacts-rest-weekley">сб—вс: с 10:00 до 19:00</p>
+          <h3 class="contacts-working-hours">Время работы</h3>
+          <ul class="contacts-schedule-list">
+            <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
+            <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
+          </ul>
           <a class="contacts-button" href="">Напишите нам</a>
         </div>
       </section>
@@ -245,10 +248,10 @@
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
           </p>
         </div>
-        <div class="subscribe-email">
+        <form class="subscribe-email" action="https://echo.htmlacademy.ru/" method="post">
           <input class="email-input" type="text" name="text" placeholder="Ваш e-mail">
           <button class="email-button" type="submit">Подписаться</button>
-        </div>
+        </form>
         <p class="subscribe-free">Это бесплатно</p>
       </section>
     </main>
