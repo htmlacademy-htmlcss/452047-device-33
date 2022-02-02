@@ -67,6 +67,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  color: black;
+  background-color: #ffe17f;
 }
 
 .search-button {
@@ -75,6 +77,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  color: black;
+  background-color: #ffe17f;
 }
 
 .navigation-list {
@@ -565,6 +569,7 @@ body {
   color: black;
   text-transform: uppercase;
   text-decoration: none;
+  letter-spacing: 2px;
 }
 
 .sort-pagination {
