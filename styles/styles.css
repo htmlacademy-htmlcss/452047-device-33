@@ -92,6 +92,16 @@ body {
   color: black;
 }
 
+.navigation-logout-link {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: black;
+  opacity: 0.3;
+}
+
 .navigation-name {
   font-size: 18px;
   line-height: 30px;
@@ -404,6 +414,188 @@ body {
   color: black;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+/* Catalog */
+
+.main-catalog {
+  background-color: #f0f0f0;
+}
+
+.catalog-category {
+  background-color: white;
+}
+
+.catalog-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+  color: black;
+}
+
+/* Breadcrumbs */
+
+.catalog-breadcrumbs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-breadcrumbs-link {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+}
+
+/* Filter */
+
+.filter-top-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 800;
+  color: black;
+  letter-spacing: 2px;
+}
+
+.filter-price-name,
+.filter-color-title,
+.filter-bluetooth-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: black;
+}
+
+.price-min,
+.price-max {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  color: black;
+  opacity: 0.3;
+}
+
+.filter-color-list,
+.filter-bluetooth-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.color-control,
+.bluetooth-control {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: black;
+}
+
+.filter-button {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  background-color: #ffe17f;
+}
+
+/* Sort */
+
+.sort-top-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 800;
+  color: black;
+  letter-spacing: 2px;
+}
+
+.sort-top-control {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: black;
+}
+
+.sort-container {
+  background-color: white;
+}
+
+.sort-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sort-item-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+
+.sort-item-price {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #444444;
+  text-decoration: none;
+}
+
+.sort-upload-button {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 800;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sort-pagination {
+  background-color: #e8e8e8;
+}
+
+.pagination-button {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.pagination-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-page-link {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #444444;
+  text-decoration: none;
+  opacity: 0.3;
 }
 
 /* Footer */

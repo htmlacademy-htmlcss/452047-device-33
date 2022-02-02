@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -17,20 +18,20 @@
         </form>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="">
+            <a class="navigation-user-link" href="">
               <img src="images/profile-icon.svg" width="15" height="13" alt="Профиль">
               <span class="navigation-profile">Коля Петухов</span>
             </a>
-            <a class="navigation-link" href="">Выйти</a>
+            <a class="navigation-logout-link" href="">Выйти</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="">
+            <a class="navigation-user-link" href="">
               <img src="images/compare-icon.svg" width="10" height="13" alt="Сравнение">
               <span class="navigation-name">Сравнить</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="">
+            <a class="navigation-user-link" href="">
               <img src="images/cart-icon.svg" width="16" height="15" alt="Корзина">
               <span class="navigation-name">Корзина</span>
             </a>
@@ -40,16 +41,16 @@
       <nav class="menu-navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+            <a class="navigation-menu-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="">Доставка</a>
+            <a class="navigation-menu-link" href="">Доставка</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="">Гарантия</a>
+            <a class="navigation-menu-link" href="">Гарантия</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="">Контакты</a>
+            <a class="navigation-menu-link" href="">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -57,7 +58,7 @@
     <main class="main-catalog">
       <h1 class="visually-hidden">Каталог товаров (моноподы для селфи)</h1>
       <div class="catalog-category">
-        <h2 class="">Моноподы для селфи</h2>
+        <h2 class="catalog-title">Моноподы для селфи</h2>
         <ul class="catalog-breadcrumbs">
           <li class="catalog-breadcrumbs-item">
             <a class="catalog-breadcrumbs-link" href="index.html">Главная</a>
@@ -161,60 +162,62 @@
           </a>
         </div>
         <div class="sort-container">
-          <ul class="sort-list">
-            <li class="sort-item">
-              <img class="sort-pic" src="images/amateur-selfiestick.jpg" width="360" height="380" alt="amateur-selfiestick">
-              <div class="sort-item-description">
-                <a class="sort-item-title" href="">Любительская селфи-палка</a>
-                <p class="sort-item-price">500 &#8381;</p>
-              </div>
-            </li>
-            <li class="sort-item">
-              <img class="sort-pic" src="images/pro-selfiestick.jpg" width="360" height="380" alt="pro-selfiestick">
-              <div class="sort-item-description">
-                <a class="sort-item-title" href="">Профессиональная селфи-палка</a>
-                <p class="sort-item-price">1&nbsp;500 &#8381;</p>
-              </div>
-            </li>
-            <li class="sort-item">
-              <img class="sort-pic" src="images/unsink-selfiestick.jpg" width="360" height="380" alt="unsink-selfiestick">
-              <div class="sort-item-description">
-                <a class="sort-item-title" href="">Непотопляемая селфи-палка</a>
-                <p class="sort-item-price">2&nbsp;500 &#8381;</p>
-              </div>
-            </li>
-            <li class="sort-item">
-              <img class="sort-pic" src="images/selfiestick-follow-me.jpg" width="360" height="380" alt="selfiestick-follow-me">
-              <div class="sort-item-description">
-                <a class="sort-item-title" href="">Селфи-палка "Следуй за мной"</a>
-                <p class="sort-item-price">1&nbsp;500 &#8381;</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="sort-upload">
-          <a class="sort-upload-button" href="">Загрузить ещё</a>
-        </div>
-        <div class="sort-pagination">
-          <a class="pagination-button" href="">Назад</a>
-          <ul class="pagination-list">
-            <li class="pagination-item">
-              <a class="pagination-page-link" href="">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-page-link" href="">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-page-link" href="">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-page-link" href="">...</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-page-link" href="">15</a>
-            </li>
-          </ul>
-          <a class="pagination-button" href="">Вперёд</a>
+          <div class="sort-merchandise">
+            <ul class="sort-list">
+              <li class="sort-item">
+                <img class="sort-pic" src="images/amateur-selfiestick.jpg" width="360" height="380" alt="amateur-selfiestick">
+                <div class="sort-item-description">
+                  <a class="sort-item-title" href="">Любительская селфи-палка</a>
+                  <p class="sort-item-price">500 &#8381;</p>
+                </div>
+              </li>
+              <li class="sort-item">
+                <img class="sort-pic" src="images/pro-selfiestick.jpg" width="360" height="380" alt="pro-selfiestick">
+                <div class="sort-item-description">
+                  <a class="sort-item-title" href="">Профессиональная селфи-палка</a>
+                  <p class="sort-item-price">1&nbsp;500 &#8381;</p>
+                </div>
+              </li>
+              <li class="sort-item">
+                <img class="sort-pic" src="images/unsink-selfiestick.jpg" width="360" height="380" alt="unsink-selfiestick">
+                <div class="sort-item-description">
+                  <a class="sort-item-title" href="">Непотопляемая селфи-палка</a>
+                  <p class="sort-item-price">2&nbsp;500 &#8381;</p>
+                </div>
+              </li>
+              <li class="sort-item">
+                <img class="sort-pic" src="images/selfiestick-follow-me.jpg" width="360" height="380" alt="selfiestick-follow-me">
+                <div class="sort-item-description">
+                  <a class="sort-item-title" href="">Селфи-палка "Следуй за мной"</a>
+                  <p class="sort-item-price">1&nbsp;500 &#8381;</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="sort-upload">
+            <a class="sort-upload-button" href="">Загрузить ещё</a>
+          </div>
+          <div class="sort-pagination">
+            <a class="pagination-button" href="">Назад</a>
+            <ul class="pagination-list">
+              <li class="pagination-item">
+                <a class="pagination-page-link" href="">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-page-link" href="">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-page-link" href="">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-page-link" href="">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-page-link" href="">15</a>
+              </li>
+            </ul>
+            <a class="pagination-button" href="">Вперёд</a>
+          </div>
         </div>
       </section>
     </main>
