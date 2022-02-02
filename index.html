@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -17,19 +18,19 @@
         </form>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="">
+            <a class="navigation-user-link" href="">
               <img src="images/profile-icon.svg" width="15" height="13" alt="Профиль">
               <span class="navigation-name">Войти</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="">
+            <a class="navigation-user-link" href="">
               <img src="images/compare-icon.svg" width="10" height="13" alt="Сравнение">
               <span class="navigation-name">Сравнить</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="">
+            <a class="navigation-user-link" href="">
               <img src="images/cart-icon.svg" width="16" height="15" alt="Корзина">
               <span class="navigation-name">Корзина</span>
             </a>
@@ -39,16 +40,16 @@
       <nav class="menu-navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+            <a class="navigation-menu-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="">Доставка</a>
+            <a class="navigation-menu-link" href="">Доставка</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="">Гарантия</a>
+            <a class="navigation-menu-link" href="">Гарантия</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="">Контакты</a>
+            <a class="navigation-menu-link" href="">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -156,9 +157,9 @@
           </li>
         </ul>
         <div class="slider-switchbuttons">
-          <button class="current-slider-button" type="button">01</button>
-          <button class="slider-button" type="button">02</button>
-          <button class="slider-button" type="button">03</button>
+          <button class="current-round-button" type="button">01</button>
+          <button class="round-button" type="button">02</button>
+          <button class="round-button" type="button">03</button>
         </div>
       </div>
       <section class="merchandise">
@@ -166,48 +167,60 @@
         <ul class="merchandise-list">
           <li class="merchandise-item">
             <a class="merchandise-link" href="catalog.html">
-              <img class="merchandise-pic" src="images/vr-merch.svg" width="97" height="55" alt="vr">
+              <div class="merchandise-pic">
+                <img src="images/vr-merch.svg" width="97" height="55" alt="vr">
+              </div>
               <p class="merchandise-name">Виртуальная реальность</p>
             </a>
           </li>
           <li class="merchandise-item">
             <a class="merchandise-link" href="catalog.html">
-              <img class="merchandise-pic" src="images/monopods-merch.svg" width="87" height="117" alt="monopods">
+              <div class="merchandise-pic">
+                <img src="images/monopods-merch.svg" width="87" height="117" alt="monopods">
+              </div>
               <p class="merchandise-name">Моноподы для селфи</p>
             </a>
           </li>
           <li class="merchandise-item">
             <a class="merchandise-link" href="catalog.html">
-              <img class="merchandise-pic" src="images/action-merch.svg" width="72" height="87" alt="action-camera">
+              <div class="merchandise-pic">
+                <img src="images/action-merch.svg" width="72" height="87" alt="action-camera">
+              </div>
               <p class="merchandise-name">Экшн-камеры</p>
             </a>
           </li>
           <li class="merchandise-item">
             <a class="merchandise-link" href="catalog.html">
-              <img class="merchandise-pic" src="images/fitness-merch.svg" width="108" height="66" alt="fitness-bracelet">
+              <div class="merchandise-pic">
+                <img src="images/fitness-merch.svg" width="108" height="66" alt="fitness-bracelet">
+              </div>
               <p class="merchandise-name">Фитнес браслеты</p>
             </a>
           </li>
           <li class="merchandise-item">
             <a class="merchandise-link" href="catalog.html">
-              <img class="merchandise-pic" src="images/smartwatch-merch.svg" width="57" height="98" alt="smartwatch">
+              <div class="merchandise-pic">
+                <img src="images/smartwatch-merch.svg" width="57" height="98" alt="smartwatch">
+              </div>
               <p class="merchandise-name">Умные часы</p>
             </a>
           </li>
           <li class="merchandise-item">
             <a class="merchandise-link" href="catalog.html">
-              <img class="merchandise-pic" src="images/drones-merch.svg" width="133" height="70" alt="drone">
+              <div class="merchandise-pic">
+                <img src="images/drones-merch.svg" width="133" height="70" alt="drone">
+              </div>
               <p class="merchandise-name">Квадрокоптеры</p>
             </a>
           </li>
         </ul>
       </section>
       <section class="services">
-        <h2 calss="visually-hidden">Услуги</h2>
+        <h2 class="visually-hidden">Услуги</h2>
         <div class='services-slider'>
           <ul class="services-slider-name">
             <li class="services-slider-item">
-              <a class="services-slider-link" href="">Доставка</a>
+              <a class="current-services-slider-link" href="">Доставка</a>
             </li>
             <li class="services-slider-item">
               <a class="services-slider-link" href="">Гарантия</a>
@@ -246,15 +259,17 @@
       </section>
       <section class="delivery">
         <h2 class="visually-hidden">Доставка</h2>
-        <img class="delivery-pic" src="images/truck-icon.svg" width="47" height="31" alt="truck">
+        <div class="delivery-pic">
+          <img src="images/truck-icon.svg" width="47" height="31" alt="truck">
+        </div>
         <p class="delivery-text">Доставим редкий товар под заказ</p>
         <a class="delivery-information" href="">i</a>
       </section>
       <section class="info">
         <h2 class="visually-hidden">Информация</h2>
         <div class="info-about-us">
-          <h3 class="about-us-tittle">О нас</h3>
-          <p class="about-us-subtittle">Огромный выбор гаджетов не оставит равнодушным гика,
+          <h3 class="about-us-title">О нас</h3>
+          <p class="about-us-subtitle">Огромный выбор гаджетов не оставит равнодушным гика,
             который есть в каждом из нас.
           </p>
           <p class="about-us-delivery">
@@ -288,7 +303,7 @@
         <h2 class="visually-hidden">Подписка</h2>
         <div class="subscribe-description">
           <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
-          <p lass="subscribe-subtitle">Еженедельный дайджест с обзорами новинок,
+          <p class="subscribe-subtitle">Еженедельный дайджест с обзорами новинок,
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
           </p>
         </div>
