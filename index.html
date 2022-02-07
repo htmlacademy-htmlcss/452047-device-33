@@ -6,30 +6,32 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header header-container">
       <a class="header-logo" href="index.html">
         <img src="images/device-header-logo.svg" width="145" height="36" alt="device лого">
       </a>
       <nav class="user-navigation">
         <form class="seacrh-navigation" action="https://echo.htmlacademy.ru/" method="get">
-          <img class="search-pic" src="images/search-lens.svg" width="16" height="17" alt="lens-pic">
-          <input class="search-input" type="search" name="search" placeholder="Текст поиска">
-          <button class="search-button" type="submit">Найти</button>
+          <div class="search-container">
+            <img class="search-pic" src="images/search-lens.svg" width="16" height="17" alt="lens-pic">
+            <input class="search-input" type="search" name="search" placeholder="Текст поиска">
+            <button class="search-button" type="submit">Найти</button>
+          </div>
         </form>
-        <ul class="navigation-list">
-          <li class="navigation-item">
+        <ul class="user-navigation-list">
+          <li class="user-navigation-item">
             <a class="navigation-user-link" href="">
               <img src="images/profile-icon.svg" width="15" height="13" alt="Профиль">
               <span class="navigation-name">Войти</span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="user-navigation-item">
             <a class="navigation-user-link" href="">
               <img src="images/compare-icon.svg" width="10" height="13" alt="Сравнение">
               <span class="navigation-name">Сравнить</span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="user-navigation-item">
             <a class="navigation-user-link" href="">
               <img src="images/cart-icon.svg" width="16" height="15" alt="Корзина">
               <span class="navigation-name">Корзина</span>
@@ -38,17 +40,17 @@
         </ul>
       </nav>
       <nav class="menu-navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
+        <ul class="menu-navigation-list">
+          <li class="menu-navigation-item">
             <a class="navigation-menu-link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="navigation-item">
+          <li class="menu-navigation-item">
             <a class="navigation-menu-link" href="">Доставка</a>
           </li>
-          <li class="navigation-item">
+          <li class="menu-navigation-item">
             <a class="navigation-menu-link" href="">Гарантия</a>
           </li>
-          <li class="navigation-item">
+          <li class="menu-navigation-item">
             <a class="navigation-menu-link" href="">Контакты</a>
           </li>
         </ul>
@@ -56,7 +58,7 @@
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">HTML Academy Device</h1>
-      <div class="slider">
+      <div class="slider container">
         <h2 class="visually-hidden">Слайдер</h2>
         <ul class="slider-list">
           <li class="slider-item">
@@ -65,13 +67,7 @@
             </div>
             <div class="slider-content">
               <div class="slider-pic">
-                <button class="slider-prev" type="button">
-                  <img src="images/arrow-left-slider.svg" width="20" height="60" alt="Пред. слайдер">
-                </button>
                 <img src="images/slider-drone.png" width="560" height="560" alt="drone-pic">
-                <button class="slider-next" type="button">
-                  <img src="images/arrow-right-slider.svg" width="20" height="60" alt="След. слайдер">
-                </button>
               </div>
               <div class="slider-description">
                 <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
@@ -97,13 +93,7 @@
             </div>
             <div class="slider-content">
               <div class="slider-pic">
-                <button class="slider-prev" type="button">
-                  <img src="images/arrow-left-slider.svg" width="20" height="60" alt="Пред. слайдер">
-                </button>
                 <img src="images/slider-tracker.png" width="560" height="560" alt="fit-tracker-pic">
-                <button class="slider-next" type="button">
-                  <img src="images/arrow-right-slider.svg" width="20" height="60" alt="След. слайдер">
-                </button>
               </div>
               <div class="slider-description">
                 <h3 class="slider-title">Худеем правильно!</h3>
@@ -125,13 +115,7 @@
             </div>
             <div class="slider-content">
               <div class="slider-pic">
-                <button class="slider-prev" type="button">
-                  <img src="images/arrow-left-slider.svg" width="20" height="60" alt="Пред. слайдер">
-                </button>
                 <img src="images/slider-selfiestick.png" width="560" height="560" alt="selfie-stick-pic">
-                <button class="slider-next" type="button">
-                  <img src="images/arrow-right-slider.svg" width="20" height="60" alt="След. слайдер">
-                </button>
               </div>
               <div class="slider-description">
                 <h3 class="slider-title">Делай селфи, как Бен Стиллер! </h3>
@@ -162,7 +146,7 @@
           <button class="round-button" type="button">03</button>
         </div>
       </div>
-      <section class="merchandise">
+      <section class="merchandise container">
         <h2 class="visually-hidden">Категория товаров</h2>
         <ul class="merchandise-list">
           <li class="merchandise-item">
@@ -194,7 +178,7 @@
               <div class="merchandise-pic">
                 <img src="images/fitness-merch.svg" width="108" height="66" alt="fitness-bracelet">
               </div>
-              <p class="merchandise-name">Фитнес браслеты</p>
+              <p class="merchandise-name">Фитнес-браслеты</p>
             </a>
           </li>
           <li class="merchandise-item">
@@ -216,48 +200,56 @@
         </ul>
       </section>
       <section class="services">
-        <h2 class="visually-hidden">Услуги</h2>
-        <div class='services-slider'>
-          <ul class="services-slider-name">
-            <li class="services-slider-item">
-              <a class="current-services-slider-link" href="">Доставка</a>
-            </li>
-            <li class="services-slider-item">
-              <a class="services-slider-link" href="">Гарантия</a>
-            </li>
-            <li class="services-slider-item">
-              <a class="services-slider-link" href="">Кредит</a>
-            </li>
-          </ul>
-          <ul class="services-slider-text">
-            <li class="services-slider-item">
-              <h3 class="services-slider-title">Доставка</h3>
-              <p class="services-slider-subtitle">Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно! Ведь
-                мы неплохо заработаем, поднимая его на ваш этаж.
-              </p>
-              <img class="services-slider-pic" src="images/delivery-service.svg" width="136" height="165" alt="Доставка">
-            </li>
-            <li class="services-slider-item">
-              <h3 class="services-slider-title">Гарантия</h3>
-              <p class="services-slider-subtitle">Если из-за возгорания купленного у нас товара у вас
-                сгорит дом — не переживайте, мы выдадим вам новый.
-                Товар, не дом, конечно же.
-              </p>
-              <img class="services-slider-pic" src="images/warrant-service.svg" width="171" height="195" alt="Гарантия">
-            </li>
-            <li class="services-slider-item">
-              <h3 class="services-slider-title">Кредит</h3>
-              <p class="services-slider-subtitle">Залезть в долговую яму стало проще!
-                Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
-                Выгодные для банка, разумеется.
-              </p>
-              <img class="services-slider-pic" src="images/credit-service.svg" width="156" height="189" alt="Кредит">
-            </li>
-          </ul>
+        <div class="container">
+          <h2 class="visually-hidden">Услуги</h2>
+          <div class='services-slider'>
+            <ul class="services-slider-name">
+              <li class="services-slider-item">
+                <a class="current-services-slider-link" href="">Доставка</a>
+              </li>
+              <li class="services-slider-item">
+                <a class="services-slider-link" href="">Гарантия</a>
+              </li>
+              <li class="services-slider-item">
+                <a class="services-slider-link" href="">Кредит</a>
+              </li>
+            </ul>
+            <ul class="services-slider-text">
+              <li class="services-slider-item">
+                <div class="services-slider-description">
+                  <h3 class="services-slider-title">Доставка</h3>
+                  <p class="services-slider-subtitle">Мы с удовольствием доставим ваш товар прямо
+                    к вашему подъезду совершенно бесплатно! Ведь
+                    мы неплохо заработаем, поднимая его на ваш этаж.
+                  </p>
+                </div>
+                <img class="services-slider-pic" src="images/delivery-service.svg" width="136" height="165" alt="Доставка">
+              </li>
+              <li class="services-slider-item">
+                <div class="services-slider-description">
+                  <h3 class="services-slider-title">Гарантия</h3>
+                  <p class="services-slider-subtitle">Если из-за возгорания купленного у нас товара у вас
+                    сгорит дом — не переживайте, мы выдадим вам новый.
+                    Товар, не дом, конечно же.
+                  </p>
+                </div>
+                <img class="services-slider-pic" src="images/warrant-service.svg" width="171" height="195" alt="Гарантия">
+              </li>
+              <li class="services-slider-item">
+                <div class="services-slider-description">
+                  <h3 class="services-slider-title">Кредит</h3>
+                  <p class="services-slider-subtitle">Залезть в долговую яму стало проще!
+                    Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
+                    Выгодные для банка, разумеется.
+                  </p>
+                </div>
+                <img class="services-slider-pic" src="images/credit-service.svg" width="156" height="189" alt="Кредит">
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <section class="delivery">
+      <section class="delivery container">
         <h2 class="visually-hidden">Доставка</h2>
         <div class="delivery-pic">
           <img src="images/truck-icon.svg" width="47" height="31" alt="truck">
@@ -265,7 +257,7 @@
         <p class="delivery-text">Доставим редкий товар под заказ</p>
         <a class="delivery-information" href="">i</a>
       </section>
-      <section class="info">
+      <section class="info container">
         <h2 class="visually-hidden">Информация</h2>
         <div class="info-about-us">
           <h3 class="about-us-title">О нас</h3>
@@ -300,68 +292,75 @@
         </div>
       </section>
       <section class="subscribe">
-        <h2 class="visually-hidden">Подписка</h2>
-        <div class="subscribe-description">
-          <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
-          <p class="subscribe-subtitle">Еженедельный дайджест с обзорами новинок,
-            длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
-          </p>
-        </div>
-        <form class="subscribe-email" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="email-input" type="text" name="text" placeholder="Ваш e-mail">
-          <button class="email-button" type="submit">Подписаться</button>
-        </form>
-        <div class="subscribe-free">
-          <img src="images/checkmark-green.svg" width="14" height="15" alt="Бесплатно">
-          <span class="subscribe-free-text">Это бесплатно</span>
+        <div class="container">
+          <h2 class="visually-hidden">Подписка</h2>
+          <div class="subscribe-description">
+            <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+            <p class="subscribe-subtitle">Еженедельный дайджест с обзорами новинок,
+              длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+            </p>
+          </div>
+          <div class="subscribe-email">
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="email-input" type="text" name="text" placeholder="Ваш e-mail">
+              <button class="email-button" type="submit">Подписаться</button>
+            </form>
+            <div class="subscribe-free">
+              <img src="images/checkmark-green.svg" width="14" height="15" alt="Бесплатно">
+              <span class="subscribe-free-text">Это бесплатно</span>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="footer-adress">
-        <a class="footer-adress-link" href="index.html">
-          <img src="images/device-footer-logo.svg" width="145" height="36" alt="device лого">
-        </a>
-        <p class="footer-adress-text">Санкт-Петербург, набережная
-          реки Карповки, 5, литера П.</p>
+      <div class="footer-container">
+        <div class="footer-adress">
+          <a class="footer-adress-link" href="index.html">
+            <img src="images/device-footer-logo.svg" width="145" height="36" alt="device лого">
+          </a>
+          <p class="footer-adress-text">Санкт-Петербург, набережная
+            реки Карповки, 5, литера П.</p>
+        </div>
+        <div class="footer-category">
+          <ul class="footer-category-list">
+            <li class="footer-category-item">
+              <a class="footer-category-link" href="">Доставка</a>
+            </li>
+            <li class="footer-category-item">
+              <a class="footer-category-link" href="">Гарантия</a>
+            </li>
+            <li class="footer-category-item">
+              <a class="footer-category-link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="footer-site-list">
+            <li class="footer-site-item">
+              <a class="footer-site-link" href="">
+                <img src="images/facebook-icon.svg" width="9" height="18" alt="Фейсбук">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="footer-site-item">
+              <a class="footer-site-link" href="">
+                <img src="images/instagram-icon.svg" width="16" height="16" alt="Инстаграм">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+            <li class="footer-site-item">
+              <a class="footer-site-link" href="">
+                <img src="images/twitter-icon.svg" width="15" height="15" alt="Твиттер">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-phone">
+          <a class="footer-phonenumber" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <img class="footer-htmlacademy" src="images/html-icon.svg" width="115" height="33" alt="HTML Academy">
+        </div>
       </div>
-      <div class="footer-category">
-        <ul class="footer-category-list">
-          <li class="footer-category-item">
-            <a class="footer-category-link" href="">Доставка</a>
-          </li>
-          <li class="footer-category-item">
-            <a class="footer-category-link" href="">Гарантия</a>
-          </li>
-          <li class="footer-category-item">
-            <a class="footer-category-link" href="">Контакты</a>
-          </li>
-        </ul>
-        <ul class="footer-site-list">
-          <li class="footer-site-item">
-            <a class="footer-site-link" href="">
-              <img src="images/facebook-icon.svg" width="9" height="18" alt="Фейсбук">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-          <li class="footer-site-item">
-            <a class="footer-site-link" href="">
-              <img src="images/instagram-icon.svg" width="16" height="16" alt="Инстаграм">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-          <li class="footer-site-item">
-            <a class="footer-site-link" href="">
-              <img src="images/twitter-icon.svg" width="15" height="15" alt="Твиттер">
-              <span class="visually-hidden">Твиттер</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-phone">
-        <a class="footer-phonenumber" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <img class="footer-htmlacademy" src="images/html-icon.svg" width="115" height="33" alt="HTML Academy">
-      </div>
+
     </footer>
   </body>
 </html>
