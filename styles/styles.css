@@ -548,10 +548,6 @@ body {
 
 /* Catalog */
 
-.main-catalog {
-  background-color: #f0f0f0;
-}
-
 .catalog-category {
   background-color: white;
 }
@@ -581,7 +577,23 @@ body {
   text-decoration: none;
 }
 
+.catalog {
+  background-color: #f0f0f0;
+}
+
+.catalog-container {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /* Filter */
+
+.catalog-filter {
+  width: 320px;
+}
 
 .filter-top-title {
   font-family: "Raleway", sans-serif;
@@ -642,6 +654,12 @@ body {
 
 /* Sort */
 
+.sort-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .sort-top-title {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -661,12 +679,28 @@ body {
 
 .sort-container {
   background-color: white;
+  width: 840px;
 }
 
 .sort-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 760px;
+}
+
+.sort-item {
+  width: 360px;
+}
+
+.sort-item-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .sort-item-title {
@@ -700,6 +734,9 @@ body {
 
 .sort-pagination {
   background-color: #e8e8e8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .pagination-button {
@@ -714,9 +751,13 @@ body {
 }
 
 .pagination-list {
+  width: 200px;
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .pagination-page-link {
