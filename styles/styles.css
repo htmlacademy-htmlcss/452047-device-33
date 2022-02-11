@@ -121,6 +121,11 @@ body {
   margin-left: auto;
 }
 
+.user-navigation-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .navigation-user-link {
   display: block;
   padding: 5px 10px;
@@ -138,7 +143,12 @@ body {
   margin-right: 120px;
 }
 
+.navigation-user-profile {
+  margin: 0;
+}
+
 .navigation-logout-link {
+  display: block;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -146,6 +156,9 @@ body {
   text-decoration: none;
   color: black;
   opacity: 0.3;
+  width: 56px;
+  margin: 0;
+  padding: 11px 0;
 }
 
 .navigation-name {
@@ -741,6 +754,9 @@ body {
 
 .catalog-category {
   background-color: white;
+  width: 1040px;
+  padding: 0 60px;
+  margin-bottom: 35px;
 }
 
 .catalog-title {
@@ -749,6 +765,8 @@ body {
   line-height: 50px;
   font-weight: 800;
   color: black;
+  margin: 0;
+  padding-top: 35px;
 }
 
 /* Breadcrumbs */
@@ -757,6 +775,8 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog-breadcrumbs-link {
@@ -766,6 +786,7 @@ body {
   font-weight: 400;
   color: black;
   text-decoration: none;
+  margin-right: 36px;
 }
 
 .catalog {
@@ -773,8 +794,9 @@ body {
 }
 
 .catalog-container {
-  width: 1160px;
+  width: 1080px;
   margin: 0 auto;
+  padding: 0 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -783,7 +805,7 @@ body {
 /* Filter */
 
 .catalog-filter {
-  width: 320px;
+  width: 280px;
 }
 
 .filter-top-title {
@@ -793,6 +815,10 @@ body {
   font-weight: 800;
   color: black;
   letter-spacing: 2px;
+  margin: 0;
+  padding-top: 25px;
+  padding-left: 20px;
+  margin-bottom: 25px;
 }
 
 .filter-price-name,
@@ -832,23 +858,32 @@ body {
 }
 
 .filter-button {
+  display: block;
+  text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 800;
   color: black;
+  width: 220px;
+  margin: 0;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
   background-color: #ffe17f;
 }
 
 /* Sort */
 
+.catalog-sort {
+  width: 840px;
+}
+
 .sort-top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-left: 40px;
 }
 
 .sort-top-title {
@@ -857,7 +892,10 @@ body {
   line-height: 19px;
   font-weight: 800;
   color: black;
-  letter-spacing: 2px;
+  margin: 0;
+  padding-top: 25px;
+  margin-bottom: 25px;
+  letter-spacing: 0.2em;
 }
 
 .sort-top-control {
@@ -866,11 +904,32 @@ body {
   line-height: 19px;
   font-weight: 400;
   color: black;
+  background-color: #f0f0f0;
+}
+
+.sort-arrows {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+
+.sort-arrow-up,
+.sort-arrow-down {
+  width: 30px;
+}
+
+.sort-arrow-up img,
+.sort-arrow-down img {
+  position: relative;
+  left: 10px;
 }
 
 .sort-container {
   background-color: white;
-  width: 840px;
+  padding-top: 70px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 78px;
 }
 
 .sort-list {
@@ -892,15 +951,25 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 30px;
+  margin-bottom: 44px;
 }
 
 .sort-item-title {
+  display: block;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   color: black;
+  width: 226px;
+  letter-spacing: -0.02em;
   text-decoration: none;
+}
+
+.amateur-selfiestick,
+.unsink-selfiestick {
+  width: 150px;
 }
 
 .sort-item-price {
@@ -909,28 +978,42 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: #444444;
+  margin: 0;
   text-decoration: none;
 }
 
+.sort-upload {
+  margin-bottom: 44px;
+}
+
 .sort-upload-button {
+  display: block;
+  text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
   font-weight: 800;
   color: black;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width: 760px;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
 }
 
 .sort-pagination {
   background-color: #e8e8e8;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
+  width: 710px;
+  padding: 25px;
 }
 
 .pagination-button {
+  display: block;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -938,7 +1021,7 @@ body {
   color: black;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
 }
 
 .pagination-list {
@@ -952,6 +1035,7 @@ body {
 }
 
 .pagination-page-link {
+  display: block;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -1045,8 +1129,6 @@ body {
   position: relative;
   bottom: 13px;
 }
-
-
 
 .footer-phone {
   width: 175px;
