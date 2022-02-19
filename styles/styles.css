@@ -943,8 +943,8 @@ body {
   margin-bottom: 44px;
 }
 
-.sort-item {
-  width: 360px;
+.sort-pic {
+  display: block;
 }
 
 .sort-item-description {
