@@ -381,6 +381,7 @@ body {
 /* Slider */
 
 .slider {
+  position: relative;
   margin-bottom: 45px;
 }
 
@@ -581,10 +582,58 @@ body {
 }
 
 .slider-switchbuttons {
+  position: absolute;
   display: flex;
-  justify-content: right;
-  position: relative;
-  bottom: 190px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  left: 1090px;
+  top: 340px;
+  z-index: 5;
+  column-gap: 20px;
+}
+
+.round-button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.current-round-button {
+  background-color: black;
+}
+
+.slider-arrowbuttons {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  left: 20px;
+  top: 180px;
+  z-index: 5;
+  column-gap: 490px;
+}
+
+.slider-arrow-button {
+  width: 20px;
+  height: 60px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.arrowbutton-left {
+  background-image: url("../images/arrow-left-slider.svg");
+}
+
+.arrowbutton-right {
+  background-image: url("../images/arrow-right-slider.svg");
 }
 
 /* Merchandise */
