@@ -320,6 +320,122 @@ body {
   line-height: 30px;
 }
 
+/* Popover */
+
+.popover {
+  position: absolute;
+  top: 40px;
+  left: 250px;
+  z-index: 5;
+  box-sizing: border-box;
+  width: 320px;
+  color: white;
+  background-color: black;
+  min-height: 100px;
+  display: none;
+}
+
+.popover-open {
+  display: block;
+}
+
+.popover::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 6px;
+  top: -6px;
+  left: 160px;
+  background-image: url("../images/popover-arrow.svg");
+  background-repeat: no-repeat;
+  z-index: 5;
+}
+
+.popover-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popover-item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.popover-item-name {
+  width: 160px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.popover-item-delete {
+  position: relative;
+  top: 0px;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.popover-item-delete::before,
+.popover-item-delete::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 2px;
+  background-color: white;
+}
+
+.popover-item-delete::before {
+  transform: rotate(45deg);
+}
+
+.popover-item-delete::after {
+  transform: rotate(-45deg);
+}
+
+.popover-check {
+  background-color: #1A1A1A;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 13px 20px 17px;
+  justify-content: space-between;
+}
+
+.popover-items {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.popover-button {
+  display: inline-block;
+  width: 280px;
+  margin: 20px;
+  padding: 14px 0;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  background-color: white;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 /* Menu */
 
 .menu-navigation {
