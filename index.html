@@ -48,13 +48,17 @@
             <div class="popover">
               <ul class="popover-list">
                 <li class="popover-item">
-                  <img class="popover-img" src="images/amateur-selfiestick.jpg" width="39" height="43" alt="amateur-selfiestick">
-                  <span class="popover-item-name">Любительская селфи-палка</span>
+                  <a class="popover-link" href="">
+                    <img class="popover-img" src="images/amateur-selfiestick.jpg" width="39" height="43" alt="amateur-selfiestick">
+                    <span class="popover-item-name">Любительская селфи-палка</span>
+                  </a>
                   <button class="popover-item-delete" type="button"></button>
                 </li>
                 <li class="popover-item">
-                  <img class="popover-img" src="images/pro-selfiestick.jpg" width="39" height="43" alt="pro-selfiestick">
-                  <span class="popover-item-name">Профессиональная селфи-палка</span>
+                  <a class="popover-link" href="">
+                    <img class="popover-img" src="images/pro-selfiestick.jpg" width="39" height="43" alt="pro-selfiestick">
+                    <span class="popover-item-name">Профессиональная селфи-палка</span>
+                  </a>
                   <button class="popover-item-delete" type="button"></button>
                 </li>
               </ul>
@@ -569,5 +573,50 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal">
+        <h2 class="modal-title">Доставка под заказ</h2>
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="modal-item">
+            <label for="your-name">Ваше имя:</label>
+            <input class="modal-form-name" type="text" id="your-name" name="name" placeholder="Введите имя" required>
+          </p>
+          <p class="modal-item">
+            <label for="your-email">Ваш email:</label>
+            <input class="modal-form-email" type="text" id="your-email" name="email" placeholder="почта" required>
+          </p>
+          <p class="modal-item modal-text">
+            <label for="what-to-deliver">Что нужно привезти:</label>
+            <textarea class="modal-form-message" id="what-to-deliver" name="message" rows="1" placeholder="В свободной форме"></textarea>
+          </p>
+          <div class="modal-item modal-quantity">
+            <span class="modal-info">
+              <label for="quantity">Количество:</label>
+              <span class="modal-tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="13" cy="13" r="13" fill="#FFE17F"/>
+                    <path d="M14 7H12V9H14V7Z" fill="black"/>
+                    <path d="M14 11H12V19H14V11Z" fill="black"/>
+                  </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                  Постараемся найти, сколько нужно. Привезём сколько получится по требованиям&nbsp;к провозу багажа.
+                </span>
+              </span>
+            </span>
+            <div class="quantity-container">
+              <span class="quantity-minus"></span>
+              <span class="quantity-number">1</span>
+              <span class="quantity-plus"></span>
+            </div>
+          </div>
+          <button class="modal-button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close-button" type="button" aria-label="Закрыть"></button>
+      </div>
+    </div>
+
   </body>
 </html>
