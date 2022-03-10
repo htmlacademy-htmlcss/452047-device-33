@@ -74,7 +74,7 @@
       <nav class="menu-navigation">
         <ul class="menu-navigation-list">
           <li class="menu-navigation-item">
-            <a class="navigation-menu-link navigation-link-catalog" href="">Каталог товаров</a>
+            <a class="navigation-menu-link navigation-link-catalog" href="catalog.html">Каталог товаров</a>
             <button class="navigation-sign" type="button"></button>
             <div class="catalog-popup">
               <ul class="navigation-catalog-list">
@@ -583,7 +583,7 @@
             <input class="modal-form-name" type="text" id="your-name" name="name" placeholder="Введите имя" required>
           </p>
           <p class="modal-item">
-            <label for="your-email">Ваш email:</label>
+            <label for="your-email">Ваш e-mail:</label>
             <input class="modal-form-email" type="text" id="your-email" name="email" placeholder="почта" required>
           </p>
           <p class="modal-item modal-text">
@@ -607,9 +607,9 @@
               </span>
             </span>
             <div class="quantity-container">
-              <span class="quantity-minus"></span>
-              <span class="quantity-number">1</span>
-              <span class="quantity-plus"></span>
+              <button class="quantity-minus"></button>
+              <input class="quantity-number" type="number" id="quantity" name="numbers" value="1">
+              <button class="quantity-plus"></button>
             </div>
           </div>
           <button class="modal-button" type="submit">Отправить</button>
