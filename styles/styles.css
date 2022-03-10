@@ -593,10 +593,15 @@ body {
   display: none;
 }
 
-.navigation-sign:active + .catalog-popup,
-.navigation-link-catalog:active + .navigation-sign + .catalog-popup,
+.navigation-sign:hover + .catalog-popup,
+.navigation-link-catalog:hover ~ .catalog-popup,
 .catalog-popup:hover {
   display: block;
+}
+
+.navigation-sign:hover::after,
+.navigation-link-catalog:hover + .navigation-sign::after {
+  display: none;
 }
 
 .navigation-catalog-list,
@@ -635,6 +640,14 @@ body {
 .column-link:focus {
   box-shadow: inset 0 0 0 2px #AF4FFF;
   outline: none;
+}
+
+.column-link:hover {
+  opacity: 0.6;
+}
+
+.column-link:active {
+  opacity: 0.3;
 }
 
 /* Index */
