@@ -46,22 +46,80 @@
             <a class="navigation-user-link navigation-user-cart" href="">
               <span class="navigation-name">Корзина</span>
             </a>
+            <div class="popover">
+              <ul class="popover-list">
+                <li class="popover-item">
+                  <a class="popover-link" href="">
+                    <img class="popover-img" src="images/amateur-selfiestick.jpg" width="39" height="43" alt="amateur-selfiestick">
+                    <span class="popover-item-name">Любительская селфи-палка</span>
+                  </a>
+                  <button class="popover-item-delete" type="button"></button>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="">
+                    <img class="popover-img" src="images/pro-selfiestick.jpg" width="39" height="43" alt="pro-selfiestick">
+                    <span class="popover-item-name">Профессиональная селфи-палка</span>
+                  </a>
+                  <button class="popover-item-delete" type="button"></button>
+                </li>
+              </ul>
+              <div class="popover-check">
+                <span class="popover-items">Товаров: 2</span>
+                <span class="popover-items">Сумма: 2000 &#8381;</span>
+              </div>
+              <button class="popover-button">Открыть корзину</button>
+            </div>
           </li>
         </ul>
       </nav>
       <nav class="menu-navigation">
         <ul class="menu-navigation-list">
           <li class="menu-navigation-item">
-            <a class="navigation-menu-link navigation-menu-catalog" href="catalog.html">Каталог товаров</a>
+            <a class="navigation-menu-link navigation-link-catalog" href="">Каталог товаров</a>
+            <button class="navigation-sign" type="button"></button>
+            <div class="catalog-popup">
+              <ul class="navigation-catalog-list">
+                <li class="navigation-catalog-column">
+                  <ul class="catalog-column-1">
+                    <li class="column-item">
+                      <a class="column-link" href="">Виртуальная реальность</a>
+                    </li>
+                    <li class="column-item">
+                      <a class="column-link" href="catalog.html">Моноподы для cелфи</a>
+                    </li>
+                    <li class="column-item">
+                      <a class="column-link link-action" href="">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navigation-catalog-column">
+                  <ul class="catalog-column-2">
+                    <li class="column-item">
+                      <a class="column-link" href="">Фитнес-браслеты</a>
+                    </li>
+                    <li class="column-item">
+                      <a class="column-link" href="">Умные часы</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navigation-catalog-column">
+                  <ul class="catalog-column-3">
+                    <li class="column-item">
+                      <a class="column-link" href="">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="menu-navigation-item">
-            <a class="navigation-menu-link" href="">Доставка</a>
+            <a class="navigation-menu-link navigation-link-delivery" href="">Доставка</a>
           </li>
           <li class="menu-navigation-item">
-            <a class="navigation-menu-link" href="">Гарантия</a>
+            <a class="navigation-menu-link navigation-link-warrant" href="">Гарантия</a>
           </li>
           <li class="menu-navigation-item">
-            <a class="navigation-menu-link navigation-menu-contacts" href="">Контакты</a>
+            <a class="navigation-menu-link navigation-link-contacts" href="">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -208,40 +266,52 @@
             <div class="sort-container">
               <ul class="sort-list">
                 <li class="sort-item">
-                  <div class="sort-image">
-                    <img class="sort-pic" src="images/amateur-selfiestick.jpg" width="360" height="380" alt="amateur-selfiestick">
-                  </div>
-                  <div class="sort-item-description">
-                    <a class="sort-item-title amateur-selfiestick" href="">Любительская селфи-палка</a>
-                    <p class="sort-item-price">500 &#8381;</p>
-                  </div>
+                  <a class="sort-link" href="">
+                    <div class="sort-image">
+                      <img class="sort-pic" src="images/amateur-selfiestick.jpg" width="360" height="380" alt="amateur-selfiestick">
+                      <span class="sort-image-more">Подробнее</span>
+                    </div>
+                    <div class="sort-item-description">
+                      <span class="sort-item-title amateur-selfiestick">Любительская селфи-палка</span>
+                      <span class="sort-item-price">500 &#8381;</span>
+                    </div>
+                  </a>
                 </li>
                 <li class="sort-item">
-                  <div class="sort-image">
-                    <img class="sort-pic" src="images/pro-selfiestick.jpg" width="360" height="380" alt="pro-selfiestick">
-                  </div>
-                  <div class="sort-item-description">
-                    <a class="sort-item-title" href="">Профессиональная селфи-палка</a>
-                    <p class="sort-item-price">1&nbsp;500 &#8381;</p>
-                  </div>
+                  <a class="sort-link" href="">
+                    <div class="sort-image">
+                      <img class="sort-pic" src="images/pro-selfiestick.jpg" width="360" height="380" alt="pro-selfiestick">
+                      <span class="sort-image-more">Подробнее</span>
+                    </div>
+                    <div class="sort-item-description">
+                      <span class="sort-item-title">Профессиональная селфи-палка</span>
+                      <span class="sort-item-price">1&nbsp;500 &#8381;</span>
+                    </div>
+                  </a>
                 </li>
                 <li class="sort-item">
-                  <div class="sort-iamge">
-                    <img class="sort-pic" src="images/unsink-selfiestick.jpg" width="360" height="380" alt="unsink-selfiestick">
-                  </div>
-                  <div class="sort-item-description">
-                    <a class="sort-item-title unsink-selfiestick" href="">Непотопляемая селфи-палка</a>
-                    <p class="sort-item-price">2&nbsp;500 &#8381;</p>
-                  </div>
+                  <a class="sort-link" href="">
+                    <div class="sort-image">
+                      <img class="sort-pic" src="images/unsink-selfiestick.jpg" width="360" height="380" alt="unsink-selfiestick">
+                      <span class="sort-image-more">Подробнее</span>
+                    </div>
+                    <div class="sort-item-description">
+                      <span class="sort-item-title unsink-selfiestick">Непотопляемая селфи-палка</span>
+                      <span class="sort-item-price">2&nbsp;500 &#8381;</span>
+                    </div>
+                  </a>
                 </li>
                 <li class="sort-item">
-                  <div class="sort-image">
-                    <img class="sort-pic" src="images/selfiestick-follow-me.jpg" width="360" height="380" alt="selfiestick-follow-me">
-                  </div>
-                  <div class="sort-item-description">
-                    <a class="sort-item-title follow-me-selfiestick" href="">Селфи-палка "Следуй за мной"</a>
-                    <p class="sort-item-price">1&nbsp;500 &#8381;</p>
-                  </div>
+                  <a class="sort-link" href="">
+                    <div class="sort-image">
+                      <img class="sort-pic" src="images/selfiestick-follow-me.jpg" width="360" height="380" alt="selfiestick-follow-me">
+                      <span class="sort-image-more">Подробнее</span>
+                    </div>
+                    <div class="sort-item-description">
+                      <span class="sort-item-title follow-me-selfiestick">Селфи-палка "Следуй за мной"</span>
+                      <span class="sort-item-price">1&nbsp;500 &#8381;</span>
+                    </div>
+                  </a>
                 </li>
               </ul>
               <div class="sort-upload">

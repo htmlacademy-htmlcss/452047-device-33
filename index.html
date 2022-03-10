@@ -45,22 +45,80 @@
             <a class="navigation-user-link navigation-user-cart" href="">
               <span class="navigation-name">Корзина</span>
             </a>
+            <div class="popover">
+              <ul class="popover-list">
+                <li class="popover-item">
+                  <a class="popover-link" href="">
+                    <img class="popover-img" src="images/amateur-selfiestick.jpg" width="39" height="43" alt="amateur-selfiestick">
+                    <span class="popover-item-name">Любительская селфи-палка</span>
+                  </a>
+                  <button class="popover-item-delete" type="button"></button>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="">
+                    <img class="popover-img" src="images/pro-selfiestick.jpg" width="39" height="43" alt="pro-selfiestick">
+                    <span class="popover-item-name">Профессиональная селфи-палка</span>
+                  </a>
+                  <button class="popover-item-delete" type="button"></button>
+                </li>
+              </ul>
+              <div class="popover-check">
+                <span class="popover-items">Товаров: 2</span>
+                <span class="popover-items">Сумма: 2000 &#8381;</span>
+              </div>
+              <button class="popover-button">Открыть корзину</button>
+            </div>
           </li>
         </ul>
       </nav>
       <nav class="menu-navigation">
         <ul class="menu-navigation-list">
           <li class="menu-navigation-item">
-            <a class="navigation-menu-link navigation-menu-catalog" href="catalog.html">Каталог товаров</a>
+            <a class="navigation-menu-link navigation-link-catalog" href="catalog.html">Каталог товаров</a>
+            <button class="navigation-sign" type="button"></button>
+            <div class="catalog-popup">
+              <ul class="navigation-catalog-list">
+                <li class="navigation-catalog-column">
+                  <ul class="catalog-column-1">
+                    <li class="column-item">
+                      <a class="column-link" href="">Виртуальная реальность</a>
+                    </li>
+                    <li class="column-item">
+                      <a class="column-link" href="catalog.html">Моноподы для cелфи</a>
+                    </li>
+                    <li class="column-item">
+                      <a class="column-link link-action" href="">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navigation-catalog-column">
+                  <ul class="catalog-column-2">
+                    <li class="column-item">
+                      <a class="column-link" href="">Фитнес-браслеты</a>
+                    </li>
+                    <li class="column-item">
+                      <a class="column-link" href="">Умные часы</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navigation-catalog-column">
+                  <ul class="catalog-column-3">
+                    <li class="column-item">
+                      <a class="column-link" href="">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="menu-navigation-item">
-            <a class="navigation-menu-link" href="">Доставка</a>
+            <a class="navigation-menu-link navigation-link-delivery" href="">Доставка</a>
           </li>
           <li class="menu-navigation-item">
-            <a class="navigation-menu-link" href="">Гарантия</a>
+            <a class="navigation-menu-link navigation-link-warrant" href="">Гарантия</a>
           </li>
           <li class="menu-navigation-item">
-            <a class="navigation-menu-link navigation-menu-contacts" href="">Контакты</a>
+            <a class="navigation-menu-link navigation-link-contacts" href="">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -119,8 +177,8 @@
             </div>
           </li>
           <li class="slider-item">
-            <div class="slider-top">
-              <span class="slider-number">03</span>
+            <div class="slider-top slider-top-03">
+              <span class="visually-hidden">03</span>
             </div>
             <div class="slider-content">
               <div class="slider-pic">
@@ -150,9 +208,23 @@
           </li>
         </ul>
         <div class="slider-switchbuttons">
-          <button class="current-round-button" type="button">01</button>
-          <button class="round-button" type="button">02</button>
-          <button class="round-button" type="button">03</button>
+          <button class="current-round-button round-button" type="button">
+            <span class="visually-hidden">Слайдер 01</span>
+          </button>
+          <button class="round-button" type="button">
+            <span class="visually-hidden">Слайдер 02</span>
+          </button>
+          <button class="round-button" type="button">
+            <span class="visually-hidden">Слайдер 03</span>
+          </button>
+        </div>
+        <div class="slider-arrowbuttons">
+          <button class="slider-arrow-button arrowbutton-left" type="button">
+            <span class="visually-hidden">Предыдущий слайдер</span>
+          </button>
+          <button class="slider-arrow-button arrowbutton-right" type="button">
+            <span class="visually-hidden">Следующий слайдер</span>
+          </button>
         </div>
       </div>
       <section class="merchandise container">
@@ -501,5 +573,50 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal">
+        <h2 class="modal-title">Доставка под заказ</h2>
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="modal-item">
+            <label for="your-name">Ваше имя:</label>
+            <input class="modal-form-name" type="text" id="your-name" name="name" placeholder="Введите имя" required>
+          </p>
+          <p class="modal-item">
+            <label for="your-email">Ваш e-mail:</label>
+            <input class="modal-form-email" type="text" id="your-email" name="email" placeholder="почта" required>
+          </p>
+          <p class="modal-item modal-text">
+            <label for="what-to-deliver">Что нужно привезти:</label>
+            <textarea class="modal-form-message" id="what-to-deliver" name="message" rows="1" placeholder="В свободной форме"></textarea>
+          </p>
+          <div class="modal-item modal-quantity">
+            <span class="modal-info">
+              <label for="quantity">Количество:</label>
+              <span class="modal-tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="13" cy="13" r="13" fill="#FFE17F"/>
+                    <path d="M14 7H12V9H14V7Z" fill="black"/>
+                    <path d="M14 11H12V19H14V11Z" fill="black"/>
+                  </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                  Постараемся найти, сколько нужно. Привезём сколько получится по требованиям&nbsp;к провозу багажа.
+                </span>
+              </span>
+            </span>
+            <div class="quantity-container">
+              <button class="quantity-minus"></button>
+              <input class="quantity-number" type="number" id="quantity" name="numbers" value="1">
+              <button class="quantity-plus"></button>
+            </div>
+          </div>
+          <button class="modal-button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close-button" type="button" aria-label="Закрыть"></button>
+      </div>
+    </div>
+
   </body>
 </html>
