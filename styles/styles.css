@@ -97,7 +97,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   position: relative;
-  top: -6px;
+  top: -7px;
 }
 
 .search-navigation::before {
@@ -123,8 +123,9 @@ body {
   border: 2px solid #000000;
   box-sizing: border-box;
   border-radius: 50px 0px 0px 50px;
-  padding: 8px 0 8px 46px;
-  width: 354px;
+  padding: 6px 0 6px 46px;
+  width: 357px;
+  height: 40px;
 }
 
 .search-input:focus {
@@ -146,6 +147,7 @@ body {
   border-radius: 0px 50px 50px 0px;
   padding: 10px 55px;
   cursor: pointer;
+  height: 40px;
 }
 
 .search-button:hover {
@@ -234,7 +236,7 @@ body {
   width: 15px;
   height: 13px;
   top: 14px;
-  left: 0;
+  left: 2px;
   z-index: 2;
 }
 
@@ -274,8 +276,8 @@ body {
   background-repeat: no-repeat;
   width: 10px;
   height: 13px;
-  top: 14px;
-  left: 0;
+  top: 13px;
+  left: 2px;
   z-index: 2;
 }
 
@@ -291,8 +293,8 @@ body {
   background-repeat: no-repeat;
   width: 16px;
   height: 15px;
-  top: 13px;
-  left: 15px;
+  top: 11px;
+  left: 16px;
   z-index: 2;
 }
 
@@ -486,7 +488,7 @@ body {
 .menu-navigation {
   position: relative;
   z-index: 3;
-  padding-top: 20px;
+  padding-top: 23px;
 }
 
 .menu-navigation-list {
@@ -531,7 +533,7 @@ body {
 .navigation-link-catalog {
   padding-right: 70px;
   padding-left: 0;
-  margin-right: 270px;
+  margin-right: 271px;
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -541,13 +543,17 @@ body {
   opacity: 1;
 }
 
-.navigation-link-delivery,
-.navigation-link-warrant {
+.navigation-link-delivery {
   margin-right: 45px;
+}
+
+.navigation-link-warrant {
+  margin-right: 47px;
 }
 
 .navigation-link-contacts {
   margin-right: 0;
+  width: 128px;
 }
 
 .navigation-link-delivery,
@@ -560,7 +566,7 @@ body {
   position: absolute;
   width: 48px;
   height: 48px;
-  top: 21px;
+  top: 24px;
   left: 244px;
   background-color: transparent;
   border: 2px solid black;
@@ -662,7 +668,7 @@ body {
 
 .slider {
   position: relative;
-  margin-bottom: 45px;
+  margin-bottom: 70px;
 }
 
 .slider-list {
@@ -729,7 +735,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: -148px;
+  margin-top: -149px;
   z-index: 1;
 }
 
@@ -748,7 +754,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 560px;
-  padding-top: 120px;
+  padding-top: 121px;
 }
 
 .slider-title {
@@ -768,7 +774,7 @@ body {
   font-weight: 400;
   color: #444444;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 51px;
 }
 
 .slider-button {
@@ -965,9 +971,15 @@ body {
 }
 
 .merchandise-name {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: black;
+  letter-spacing: -0.02em;
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 15px;
+  padding-top: 31px;
+  padding-bottom: 14px;
 }
 
 .merchandise-name-monopods {
@@ -1008,15 +1020,6 @@ body {
   position: relative;
   top: 45px;
   left: 14px;
-}
-
-.merchandise-name {
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 800;
-  color: black;
-  letter-spacing: -0.02em;
 }
 
 /* Services */
@@ -1677,6 +1680,10 @@ body {
 
 /* Catalog */
 
+.catalog-header {
+  padding-bottom: 20px;
+}
+
 .catalog-category {
   background-color: white;
   width: 1040px;
@@ -1691,7 +1698,7 @@ body {
   font-weight: 800;
   color: black;
   margin: 0;
-  padding-top: 35px;
+  padding-top: 36px;
   margin-bottom: 16px;
 }
 
@@ -1789,7 +1796,7 @@ body {
 }
 
 .filter-container {
-  padding-top: 48px;
+  padding-top: 46px;
 }
 
 .filter-price,
@@ -1802,11 +1809,11 @@ body {
 }
 
 .filter-price {
-  margin-bottom: 70px;
+  margin-bottom: 69px;
 }
 
 .filter-color {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .filter-price-name,
@@ -1829,7 +1836,8 @@ body {
   width: 200px;
   height: 2px;
   background-color: black;
-  top: -13px;
+  top: -14px;
+  left: 7px;
 }
 
 .filter-price-name {
@@ -1996,7 +2004,7 @@ body {
   color: black;
   width: 220px;
   margin: 0;
-  margin-top: 40px;
+  margin-top: 37px;
   margin-left: 21px;
   padding: 10px 0;
   text-transform: uppercase;
@@ -2060,6 +2068,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding-left: 40px;
 }
 
@@ -2079,7 +2088,6 @@ body {
 .sort-top-control {
   width: 159px;
   height: 30px;
-  margin-top: 20px;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -2107,20 +2115,45 @@ body {
 }
 
 .sort-arrows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin-right: 40px;
 }
 
 .sort-arrow-up,
 .sort-arrow-down {
+  display: inline-block;
+  position: relative;
   width: 30px;
+  height: 30px;
+  top: 10px;
 }
 
-.sort-arrow-up img,
-.sort-arrow-down img {
+.sort-arrow-up svg,
+.sort-arrow-down svg {
   position: relative;
+  top: -22px;
   left: 10px;
+  opacity: 0.2;
+}
+
+.sort-arrow-up:hover svg,
+.sort-arrow-down:hover svg {
+  opacity: 0.5;
+}
+
+.sort-arrow-up:active svg,
+.sort-arrow-down:active svg {
+  opacity: 1;
+}
+
+.sort-arrow-up:focus,
+.sort-arrow-down:focus {
+  box-shadow: inset 0 0 0 2px #AF4FFF;
+  outline: none;
 }
 
 .sort-container {
@@ -2128,7 +2161,7 @@ body {
   padding-top: 70px;
   padding-left: 40px;
   padding-right: 40px;
-  padding-bottom: 78px;
+  padding-bottom: 77px;
 }
 
 .sort-list {
@@ -2139,7 +2172,7 @@ body {
   grid-template-columns: repeat(2, 360px);
   gap: 44px 40px;
   width: 760px;
-  margin-bottom: 44px;
+  margin-bottom: 42px;
 }
 
 .sort-link {
@@ -2283,6 +2316,18 @@ body {
   border: 3px solid #E5E5E5;
 }
 
+.sort-upload-button:hover {
+  border: 3px solid black;
+  color: white;
+  background-color: black;
+}
+
+.sort-upload-button:active {
+  border: 3px solid black;
+  color: rgb(255, 255, 255, 0.3);
+  background-color: black;
+}
+
 .sort-upload-button:focus {
   box-shadow: 0 0 0 2px #AF4FFF;
   outline: none;
@@ -2293,9 +2338,8 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: start;
-  width: 710px;
-  padding: 25px;
+  justify-content: space-between;
+  width: 760px;
 }
 
 .pagination-button {
@@ -2308,14 +2352,21 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
+  padding: 25px;
+}
+
+.pagination-button:hover {
+  background-color: #DCDCDC;
+}
+
+.pagination-button:active {
+  color: rgb(0, 0, 0, 0.3);
 }
 
 .pagination-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: 168px;
-  margin-right: 157px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -2324,14 +2375,39 @@ body {
 .pagination-page-link {
   display: block;
   font-family: "Rubik", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
   color: #444444;
   text-decoration: none;
   opacity: 0.3;
-  padding: 0 15px;
+  padding: 10px 15px;
+  margin: 15px 0;
 }
+
+.pagination-page-link:hover {
+  opacity: 1;
+}
+
+.pagination-page-link:active {
+  opacity: 0.1;
+}
+
+.page-link-current {
+  opacity: 0.6;
+}
+
+.pagination-button:focus,
+.pagination-page-link:focus {
+  box-shadow: 0 0 0 2px #AF4FFF;
+  outline: none;
+  opacity: 1;
+}
+
+.pagination-button-next {
+  width: 91px;
+}
+
 
 /* Footer */
 
@@ -2388,8 +2464,8 @@ body {
 
 .footer-category {
   width: 444px;
-  padding-top: 80px;
-  padding-left: 110px;
+  padding-top: 82px;
+  padding-left: 112px;
 }
 
 .footer-category-list {
@@ -2398,7 +2474,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-between;
-  width: 444px;
+  width: 446px;
 }
 
 .footer-category-link {
@@ -2516,7 +2592,7 @@ body {
   font-weight: 400;
   color: white;
   margin-top: 83px;
-  margin-bottom: 60px;
+  margin-bottom: 57px;
 }
 
 .footer-phonenumber:hover {

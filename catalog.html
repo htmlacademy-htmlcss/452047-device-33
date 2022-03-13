@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header header-container">
+    <header class="page-header catalog-header header-container">
       <a class="header-logo" href="index.html">
         <svg width="145" height="37" viewBox="0 0 145 37" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_24_616)">
@@ -234,34 +234,31 @@
               <select class="sort-top-control" aria-label="Сортировка">
                 <option value="popular">Популярные</option>
               </select>
-              <div class="sort-arrows">
-                <a class="sort-arrow-up" href="">
-                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g opacity="0.2" clip-path="url(#clip0_14501_315)">
-                    <path d="M6 0L11.5 10H0.5" fill="black"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_14501_315">
-                    <rect width="11" height="10" fill="white" transform="translate(0.5)"/>
-                    </clipPath>
-                    </defs>
-                  </svg>
-                  <span class="visually-hidden">Вверх</span>
-                </a>
-                <a class="sort-arrow-down" href="">
-                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g opacity="0.2" clip-path="url(#clip0_14501_318)">
-                    <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="black"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_14501_318">
-                    <rect width="11" height="10" fill="white" transform="translate(11.5 10) rotate(180)"/>
-                    </clipPath>
-                    </defs>
-                  </svg>
-                  <span class="visually-hidden">Вниз</span>
-                </a>
-              </div>
+              <ul class="sort-arrows">
+                <li class="sort-arrow-item">
+                  <a class="sort-arrow-up" href="">
+                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_11478_2978)">
+                      <path d="M6 0L11.5 10H0.5" fill="black"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_11478_2978">
+                          <rect width="11" height="10" fill="white" transform="translate(0.5)"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <span class="visually-hidden">Вверх</span>
+                  </a>
+                </li>
+                <li class="sort-arrow-item">
+                  <a class="sort-arrow-down" href="">
+                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 10L0.5 0L11.5 0" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">Вниз</span>
+                  </a>
+                </li>
+              </ul>
             </div>
             <div class="sort-container">
               <ul class="sort-list">
@@ -308,7 +305,7 @@
                       <span class="sort-image-more">Подробнее</span>
                     </div>
                     <div class="sort-item-description">
-                      <span class="sort-item-title follow-me-selfiestick">Селфи-палка "Следуй за мной"</span>
+                      <span class="sort-item-title follow-me-selfiestick">Селфи-палка &#171;Следуй за мной&#187;</span>
                       <span class="sort-item-price">1&nbsp;500 &#8381;</span>
                     </div>
                   </a>
@@ -321,7 +318,7 @@
                 <a class="pagination-button" href="">Назад</a>
                 <ul class="pagination-list">
                   <li class="pagination-item">
-                    <a class="pagination-page-link" href="">1</a>
+                    <a class="pagination-page-link page-link-current" href="">1</a>
                   </li>
                   <li class="pagination-item">
                     <a class="pagination-page-link" href="">2</a>
@@ -336,7 +333,7 @@
                     <a class="pagination-page-link" href="">15</a>
                   </li>
                 </ul>
-                <a class="pagination-button" href="">Вперёд</a>
+                <a class="pagination-button pagination-button-next" href="">Вперёд</a>
               </div>
             </div>
           </section>
