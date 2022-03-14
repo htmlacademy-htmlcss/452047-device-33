@@ -2704,10 +2704,10 @@ body {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 76px;
-  right: 67px;
-  width: 26px;
-  height: 26px;
+  top: 70px;
+  right: 65px;
+  width: 36px;
+  height: 36px;
   background-color: #ffffff;
   border: none;
   cursor: pointer;
@@ -2718,8 +2718,8 @@ body {
   content: "";
   width: 32px;
   height: 3px;
-  top: 12px;
-  right: 0;
+  top: 17px;
+  left: 2px;
   background-color: black;
 }
 .modal-close-button::before {
