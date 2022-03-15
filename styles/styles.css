@@ -175,6 +175,7 @@ body {
 .user-navigation {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 1040px;
   margin: 0 auto;
@@ -891,6 +892,7 @@ body {
   list-style: none;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -1144,6 +1146,7 @@ body {
   background-color: #f0f0f0;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-bottom: 70px;
 }
 .delivery-button {
@@ -1919,7 +1922,7 @@ body {
   z-index: -1;
 }
 .filter-button:focus {
-  position: relative  ;
+  position: relative;
   box-shadow: inset 0 0 0 2px #AF4FFF;
   outline: none;
   z-index: 0;
@@ -2246,6 +2249,10 @@ body {
 }
 .footer-adress {
   width: 239px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
 }
 .footer-adress-link:hover {
   opacity: 0.6;
@@ -2267,13 +2274,14 @@ body {
   padding-top: 30px;
   position: relative;
 }
-.footer-adress-text::before {
+.footer-adress::before {
   content: "";
   position: absolute;
   width: 80px;
   height: 7px;
   background-color: #FFC500;
-  top: 132px;
+  bottom: 21px;
+  left: 1px;
 }
 .footer-category {
   width: 444px;
@@ -2285,6 +2293,8 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 446px;
 }
