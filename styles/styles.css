@@ -2583,7 +2583,7 @@ body {
 }
 .modal-form-message {
   resize: none;
-  width: 520px;
+  width: 540px;
   padding: 20px 0 20px 20px;
   border: none;
   background-color: #F0F0F0;
@@ -2592,6 +2592,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 .modal-form-name:hover,
 .modal-form-email:hover,
